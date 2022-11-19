@@ -3,6 +3,7 @@
  //  IR Control for WALL-E by Raspberry Pi3 with wiringPI
  //
  //  Created by Nabeshin on 2017/05/25.
+ //  Edited by Ephedrum on 2022/11/19
  **************************************************************/
 
 /*
@@ -175,6 +176,18 @@ void exec_command(int command){
             send_command( BUTTON_MECHA );
             delayMicroseconds(6123500); // OFF for enough time
             break;
+        case 11:
+            send_command( JOYSTICK_FORWARD );
+            send_command( JOYSTICK_FORWARD );
+            send_command( JOYSTICK_FORWARD );
+            delayMicroseconds(1523500); // OFF for enough time
+            break;
+        case 12:
+            send_command( JOYSTICK_BACKWARD );
+            send_command( JOYSTICK_BACKWARD );
+            send_command( JOYSTICK_BACKWARD );
+            delayMicroseconds(1523500); // OFF for enough time
+            break;
         default:
             printf("NO COMMAND....\n");
             break;
@@ -200,19 +213,21 @@ int main(int argc, const char * argv[]) {
     // Setup wiring Pi
     setup();
 
-    char* menuStr = "ウォーリー　そうさメニュー \n"
-    " 1: スイッチオン\n"
-    " 2: 前に進む\n"
-    " 3: 左に曲がる\n"
-    " 4: 後ろを向く\n"
-    " 5: ぐるっと１回転\n"
-    " 6: いろんな音\n"
-    " 7: ダンス\n"
-    " 8: 起きる\n"
-    " 9: しゃべる\n"
-    "10: ロボットの音\n"
-    " 0: 終わり\n"
-    "番号を選んでください>";
+    char* menuStr = "Wall-E UCommand Remote Control \n"
+     " 1: Turn On - Encender\n"
+     " 2: Move Forward - Avanzar\n"
+     " 3: Turn Left - irar a la izquierda\n"
+     " 4: Move Backwards - Retroceder\n"
+     " 5: Rotate - Gira una vez\n"
+     " 6: Sounds - Varios sonidos\n"
+     " 7: Dance - Bailar\n"
+     " 8: Move Eyes - Mover Ojos\n"
+     " 9: Talk - Hablar\n"
+     " 10: MECHA Sounds - Sonidos de robots\n"
+     " 11: Joystick Forward - Joystick Adelante\n"
+     " 12: Joystick Backwards - Joystick Atras\n"
+     "0: Exit - Salir\n"
+     "Choose a number - Elija un número> ";
     
     int command;
     
