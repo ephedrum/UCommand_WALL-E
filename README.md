@@ -68,7 +68,7 @@ The control program of UCommand WALL-E with IR LED for Raspberry Pi3.
 
 # Schematic
 
-![SCHEMATIC](https://user-images.githubusercontent.com/52347942/120874582-3c4ea580-c5e2-11eb-97eb-cf968f15a39c.png)
+![SCHEMATIC](images/WalleRemote_bb.png)
 
 | No.| index       | item                    | num |
 | -- | ----------- | ----------------------- | --- |
