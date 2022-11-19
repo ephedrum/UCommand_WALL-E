@@ -1,5 +1,5 @@
 # UCommand_WALL-E IR Controller
-The control program of UCommand WALL-E with IR LED for Raspberry Pi3.
+The control program of UCommand WALL-E with IR LED for Raspberry Pi.
 
 * Abstract
    * I got old used WALL-E from auction site but without no controller.
@@ -8,7 +8,7 @@ The control program of UCommand WALL-E with IR LED for Raspberry Pi3.
    * I made IR LED board and C code from scratch.
    * Finally I got successfully controlled in 12 remote control commands.
 
-![IMG_0120](https://user-images.githubusercontent.com/52347942/104117796-5ce23e80-5367-11eb-8b8f-f470dd248ce1.jpeg)
+![IMG_0120](images/Walle0.jpeg)
 
 # Signal Spec
 * http://www.hifi-remote.com/forums/viewtopic.php?t=12137
@@ -60,11 +60,11 @@ The control program of UCommand WALL-E with IR LED for Raspberry Pi3.
 ```
 
 # Original Pictures
-## UCommand WALL-E & Original Remote Controller
+## UCommand WALL-E & Original Remote Controller, adapted from Nabeshin @demoquattro996
 
-![IMG_0086](https://user-images.githubusercontent.com/52347942/104117746-fceb9800-5366-11eb-8434-29a25016ac04.jpeg)
+![IMG_0086](images/Walle1.jpeg)
 
-![IMG_0088](https://user-images.githubusercontent.com/52347942/104117760-18ef3980-5367-11eb-8930-d83f8c0ebe57.jpeg)
+![IMG_0088](images/Remote.jpeg)
 
 # Schematic
 
@@ -74,9 +74,9 @@ The control program of UCommand WALL-E with IR LED for Raspberry Pi3.
 | -- | ----------- | ----------------------- | --- |
 | 1  | IR LED 1-3  | IR-LED (OSI5FU5111C-40) | 3   |
 | 2  | R1-3        | Resistor (10 ohm)       | 3   |
-| 3  | R1(sorry it should be R4) | Resistor (2.2K ohm)     | 1   |
+| 3  | R4          | Resistor (2.2K ohm)     | 1   |
 | 4  | N           | Transistor (2SC1815)    | 1   |
-| 5  | IR Reciever | (not used)              | 0   |
+
 
 NOTE
 
@@ -119,5 +119,5 @@ NOTE
 INPUT COMMAND>
 ```
 
-![IMG_0090](https://user-images.githubusercontent.com/52347942/104117774-3a502580-5367-11eb-8563-f92abc0c8a87.jpeg)
+![IMG_0090](images/InitialTestSchematics.jpeg)
 
